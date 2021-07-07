@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tema3MVP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3MVP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="627*"/>
+            <ColumnDefinition Width="166*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lstMeniu" Height="242" Margin="67,138,62.2,40" Width="498" HorizontalAlignment="Center" VerticalAlignment="Center" SelectionChanged="lstMeniu_SelectionChanged"/>
+        <ListBox x:Name="lstAlergeni" HorizontalAlignment="Left" Height="242" Margin="570,138,0,0" VerticalAlignment="Top" Width="157" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cmbCategorii" HorizontalAlignment="Left" Height="44" Margin="67,65,0,0" VerticalAlignment="Top" Width="256" SelectionChanged="cmbCategorii_SelectionChanged"/>
+        <Button x:Name="btnInapoi" Content="Inapoi" HorizontalAlignment="Left" Height="44" Margin="570,65,0,0" VerticalAlignment="Top" Width="157" Click="btnInapoi_Click" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
